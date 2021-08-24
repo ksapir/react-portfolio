@@ -60,9 +60,14 @@ img {
 /* Changes email link to white */
 a[href^="mailto"] { color: white; }
 
-a{
+a {
     color: white;
 }
+
+a:hover {
+    color: black;
+}
+
 .center {
     align-content: center;
     text-align: center;
@@ -135,8 +140,12 @@ a:visited {
     nav {
       display: flex;
       flex-direction: column;
-      border: 2px solid var(--black);
-      margin: 10px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    a {
+        color:black;
     }
 
     img {
