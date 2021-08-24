@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
 import ContactMe from "./components/ContactMe";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -11,7 +13,8 @@ function App() {
           <AboutMe />
           <MyWork />
           <ContactMe />
-          {/* <Resume /> */}
+          <Resume />
+          <Footer />
         </div>
       );
 }
