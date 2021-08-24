@@ -60,6 +60,9 @@ img {
 /* Changes email link to white */
 a[href^="mailto"] { color: white; }
 
+a{
+    color: white;
+}
 .center {
     align-content: center;
     text-align: center;

@@ -4,11 +4,20 @@ import img2 from './images/recipe-finder-recipe.png'
 import img3 from './images/weather-dashboard.png'
 import img4 from './images/work-day-scheduler.png'
 
+const styles = {
+    pretty: {  
+        alignContent:'center',
+        alighSelf: 'center',
+        padding: '20px',
+        margin: '20px auto',
+        border: '2px solid black'
+    }
+}
 
 export default function MyWork() {
     return (
         <div>
-            <div class="container center border" id="my-work">
+            <div style={styles.pretty} class="container center" id="my-work">
                 <h1>My Work</h1>
                 {/* <!-- Perfect Home Section --> */}
                 <div>
@@ -16,7 +25,7 @@ export default function MyWork() {
                     <a href="https://perfect-home-finder.herokuapp.com/" target="_blank" rel="noreferrer"><img class="pre-hover flex-image" src={img1} alt="Perfect Home"/></a>
                     <a href="https://github.com/KeithMurph/PerfectHome" target="_blank" rel="noreferrer">Click here to go to the repository</a>
                 </div>
-                
+                <hr></hr>
 
                 {/* <!-- Recipe Finder Section --> */}
                 <div class="row">
