@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 center" id="about-me">
             <img src="./assets/images/Karenpion.jpg"
-                alt="Karen's Picture" />
+                alt="Karen" />
             {/* <!-- About Me Section --> */}
             <h1>About Me</h1>
             <p>{description}</p>
