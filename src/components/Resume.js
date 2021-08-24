@@ -1,4 +1,6 @@
 import React from 'react';
+import img2 from './images/karen-resume-1.jpg'
+import img1 from './images/karen-resume.jpg'
 
 export default function Resume() {
     return(
@@ -7,9 +9,9 @@ export default function Resume() {
             <h1>My Resume</h1>
             <div id="scroll">
                 <a href="./assets/images/karen-resume.pdf" target="_blank" download>
-                    <img class="flex-image" src="./assets/images/karen-resume.jpg" alt="My Resume" /></a>
+                    <img class="flex-image" src={img1} alt="My Resume" /></a>
                 <a href="./assets/images/karen-resume.pdf" target="_blank" download>
-                    <img class="flex-image" src="./assets/images/karen-resume-1.jpg" alt="My Resume Page 2" />
+                    <img class="flex-image" src={img2} alt="My Resume Page 2" />
                 </a>
             </div>
         </div>

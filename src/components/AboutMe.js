@@ -1,4 +1,5 @@
 import React from 'react';
+import img from './images/Karenpion.jpg'
 
 const styles = {
     img: {
@@ -14,7 +15,7 @@ export default function AboutMe() {
         <div class="container">
         <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 center" id="about-me">
-        <img styles={styles.img} src="./assets/images/Karenpion.jpg"
+        <img styles={styles.img} src={img}
                 alt="Karen" />
             {/* <!-- About Me Section --> */}
             <h1>About Me</h1>
