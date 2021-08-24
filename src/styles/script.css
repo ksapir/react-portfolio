@@ -1,0 +1,149 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+
+body {
+    background-image: linear-gradient(#649173, #DBD5A4);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Rules for Header*/
+header {
+    display: flex;
+    font-family: 'Montserrat';
+    padding: 15px;
+    height: 100%;
+}
+
+/* Rules for nav bar */
+nav {
+    position: absolute;
+    right: 0px; 
+    margin-top: 35px;
+}
+
+/* Rules for h1 inside header section */
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+/* All other h1 rules */
+h1 {
+    font-size: 40px;
+    margin: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+/* h2 rules */
+h2 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+
+/* Rules for footer */
+footer {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Changes email link to white */
+a[href^="mailto"] { color: white; }
+
+.center {
+    align-content: center;
+    text-align: center;
+
+}
+
+.border {
+    border: 2px solid black !important;
+}
+
+/* How images in 'My Work' section look when not hovered */
+.pre-hover {
+    opacity: 1.0;
+}
+
+/* How images in 'My Work' section look upon hover */
+.pre-hover:hover {
+    opacity: 0.5;
+}
+
+#about-me {
+    text-align: left;   
+}
+
+#about-me p {
+    line-height: 35px;
+}
+
+#scroll {
+    max-height: 300px;
+    max-width: 700px;
+    overflow: scroll;
+    border: 1px black solid;
+}
+
+#my-resume {
+    text-align: center;
+}
+
+#flex-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+a:visited {
+    color: white;
+}
+
+.project-gallery {
+    width: 25vw;
+    color: white;
+}
+
+/* For different media screens */
+@media sreen and(max-wdith: 992px){
+    img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-shrink: 2;
+        
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid var(--black);
+      margin: 10px;
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-shrink: 2;
+    }
+
+    .reduce {
+        font-size: 18px;
+    }
+}

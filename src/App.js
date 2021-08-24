@@ -5,6 +5,9 @@ import MyWork from "./components/MyWork";
 import ContactMe from "./components/ContactMe";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+import './styles/reset.css'
+import './styles/script.css'
+
 
 function App() {
     return (

@@ -3,7 +3,6 @@ import React from 'react';
 export default function MyWork() {
     return (
         <div>
-                <h2>MY WORK</h2>
             <div class="container center border" id="my-work">
                 <h1>My Work</h1>
                 {/* <!-- Perfect Home Section --> */}
