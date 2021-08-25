@@ -26,7 +26,7 @@ const styles = {
         borderRadius: '10px 100px / 120px'
     },
     textarea: {
-        hieght: '100%',
+        height: '150px',
         display: 'block',
         marginTop: '5px',
         marginBottom: '5px',
@@ -66,7 +66,7 @@ export default function ContactMe() {
 
         // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
         if (!validateEmail(email)) {
-            setErrorMessage('Email is required');
+            setErrorMessage('Please enter a valid email');
             // We want to exit out of this code block if something is wrong so that the user can correct it
             return;
             // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
@@ -104,7 +104,7 @@ export default function ContactMe() {
                         type="text"
                         placeholder="Name"
                     />
-                    <textarea style={ styles.textarea}
+                    <textarea style={styles.textarea}
                         value={message}
                         name="message"
                         onChange={handleInputChange}

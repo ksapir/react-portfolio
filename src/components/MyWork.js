@@ -3,6 +3,9 @@ import img1 from './images/perfect-home.png'
 import img2 from './images/recipe-finder-recipe.png'
 import img3 from './images/weather-dashboard.png'
 import img4 from './images/work-day-scheduler.png'
+import img5 from './images/note-taker.png'
+import img6 from './images/workout-tracker.png'
+import img7 from './images/budget-tracker.png'
 
 const styles = {
     pretty: {  
@@ -11,6 +14,9 @@ const styles = {
         padding: '20px',
         margin: '20px auto',
         border: '2px solid black'
+    },
+    margin: {
+        marginBottom: '50px'
     }
 }
 
@@ -20,39 +26,70 @@ export default function MyWork() {
             <div style={styles.pretty} className="container center" id="my-work">
                 <h1>My Work</h1>
                 {/* <!-- Perfect Home Section --> */}
-                <div>
+                <div className="row">
+                <div style={styles.margin} className="col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
                     <h2>Perfect Home </h2>
-                    <a href="https://perfect-home-finder.herokuapp.com/" target="_blank" rel="noreferrer"><img class="pre-hover flex-image" src={img1} alt="Perfect Home"/></a>
+                    <a href="https://perfect-home-finder.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover flex-image" src={img1} alt="Perfect Home"/></a>
                     <a href="https://github.com/KeithMurph/PerfectHome" target="_blank" rel="noreferrer">Click here to go to the repository</a>
                 </div>
                 <hr></hr>
 
                 {/* <!-- Recipe Finder Section --> */}
-                <div class="row">
-                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
-                        <h2 class="reduce">Special Recipe Finder Web App</h2>
-                        <a href="https://ksapir.github.io/recipe-finder" target="_blank" rel="noreferrer"><img class="pre-hover"
+                <div style={styles.margin} className="row">
+                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                        <h2 className="reduce">Special Recipe Finder</h2>
+                        <a href="https://ksapir.github.io/recipe-finder" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img2} alt="Recipe Finder"/></a>
                         <a href="https://github.com/ksapir/recipe-finder" target="_blank" rel="noreferrer">Click here to go to the repository</a>
                     </div>
 
+                      {/* <!-- Note Taker Section --> */}
+                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                        <h2 className="reduce">Note Taker</h2>
+                        <a href="https://note-taker-1992.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover"
+                        src={img5} alt="Work Day Scheduler"/></a>
+                        <a href="https://github.com/ksapir/note-taker" target="_blank" rel="noreferrer">Click here to go to the
+                        Repository</a>
+                    </div>
+
+                       {/* <!-- Workout Tracker Section --> */}
+                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                        <h2 className="reduce">Workout Tracker</h2>
+                        <a href="https://floating-badlands-61761.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover"
+                        src={img6} alt="Work Day Scheduler"/></a>
+                        <a href="https://github.com/ksapir/workout-tracker" target="_blank" rel="noreferrer">Click here to go to the
+                        Repository</a>
+                    </div>
+                </div>
+                <hr></hr>
+                <div className="row">
+                       {/* <!-- Budget Tracker Section --> */}
+                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                        <h2 className="reduce">Budget Tracker</h2>
+                        <a href="https://lit-taiga-45772.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover"
+                        src={img7} alt="Work Day Scheduler"/></a>
+                        <a href="https://github.com/ksapir/budget-trackers" target="_blank" rel="noreferrer">Click here to go to the
+                        Repository</a>
+                    </div>
+
                     {/* <!-- Weather Dashboard Section --> */}
-                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
-                        <h2 class="reduce">Weather Dashboard Web App</h2>
-                        <a href="https://ksapir.github.io/weather-dashboard" target="_blank" rel="noreferrer"><img class="pre-hover"
+                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                        <h2 className="reduce">Weather Dashboard</h2>
+                        <a href="https://ksapir.github.io/weather-dashboard" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img3} alt="Weather Dashboard"/></a>
                         <a href="https://github.com/ksapir/weather-dashboard" target="_blank" rel="noreferrer">Click here to go to the
                         repository</a>
                     </div>
 
                     {/* <!-- Work Day Scheduler Section --> */}
-                    <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
-                        <h2 class="reduce">Work Day Scheduler</h2>
-                        <a href="https://ksapir.github.io/work-day-scheduler" target="_blank" rel="noreferrer"><img class="pre-hover"
+                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                        <h2 className="reduce">Work Day Scheduler</h2>
+                        <a href="https://ksapir.github.io/work-day-scheduler" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img4} alt="Work Day Scheduler"/></a>
                         <a href="https://github.com/ksapir/work-day-scheduler" target="_blank" rel="noreferrer">Click here to go to the
                         Repository</a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
