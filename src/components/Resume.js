@@ -14,7 +14,7 @@ const styles = {
 
 export default function Resume() {
     return(
-        <div class="container">
+        <div className="container">
         <div style={styles.pretty} id="my-resume">
             <h1>My Resume</h1>
             <div id="scroll">

@@ -17,7 +17,7 @@ const styles = {
 export default function MyWork() {
     return (
         <div>
-            <div style={styles.pretty} class="container center" id="my-work">
+            <div style={styles.pretty} className="container center" id="my-work">
                 <h1>My Work</h1>
                 {/* <!-- Perfect Home Section --> */}
                 <div>

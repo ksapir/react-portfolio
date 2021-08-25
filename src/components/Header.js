@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const styles = {
     nav: {
@@ -16,10 +17,10 @@ export default function Header() {
             <header>
                 <h1>Karen Pion</h1>
                 <nav style={styles.nav}>
-                    <a style={styles.a} href="#about-me">About Me  </a>
-                    <a style={styles.a} href="#my-work"> My Work  </a>
-                    <a style={styles.a} href="#contact-me"> Contact Me</a>
-                    <a style={styles.a} href="#my-resume"> My Resume</a>
+                    <a style={styles.a} ><Link to='/'>About Me</Link></a>
+                    <a style={styles.a} ><Link to='/mywork'>My Work</Link></a>
+                    <a style={styles.a} ><Link to='/contact'>Contact Me</Link></a>
+                    <a style={styles.a} ><Link to='/resume'>Resume</Link></a>
                 </nav>
             </header>
         </div>
