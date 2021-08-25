@@ -8,7 +8,32 @@ const styles = {
         padding: '20px',
         margin: '20px auto',
         border: '2px solid black'
+    },
+    form: {
+        margin: '20px',
+    },
+    input: {
+        display: 'block',
+        marginTop: '5px',
+        marginBottom: '5px',
+        width: '100%',
+        borderRadius: '5px'
+    },
+    button: {
+        color: 'white',
+        fontFamily: 'Montserrat',
+        backgroundColor: '#649173',
+        borderRadius: '10px 100px / 120px'
+    },
+    textarea: {
+        hieght: '100%',
+        display: 'block',
+        marginTop: '5px',
+        marginBottom: '5px',
+        width: '100%',
+        borderRadius: '5px'
     }
+      
 }
 
 export default function ContactMe() {
@@ -55,45 +80,47 @@ export default function ContactMe() {
 
     return (
         // <!-- Contact Me Section -->
+    <div> 
         <div className="container">
-            <div style={styles.pretty} class="center" id="contact-me">
+            <div style={styles.pretty} className="center" id="contact-me">
                 <h1>Contact Me</h1>
                 <p>(561) 441-2962</p>
                 <a href="mailto: karenlpion@gmail.com">Email |</a>
                 <a href="https://github.com/ksapir" target="_blank" rel="noreferrer"> Github |</a>
-                <a href="https://www.linkedin.com/in/karenpion/" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
+                <a href="https://www.linkedin.com/in/karenpion/" target="_blank" rel="noreferrer">  LinkedIn</a>
             <div>
-                <form className="form">
-                    <input
+                <form style={styles.form}>
+                    <input style={styles.input}
                         value={email}
                         name="email"
                         onChange={handleInputChange}
                         type="email"
                         placeholder="Email"
                     />
-                    <input
+                    <input style={styles.input}
                         value={name}
                         name="name"
                         onChange={handleInputChange}
                         type="text"
                         placeholder="Name"
                     />
-                    <input
+                    <textarea style={ styles.textarea}
                         value={message}
                         name="message"
                         onChange={handleInputChange}
                         type="text"
                         placeholder="Message"
                     />
-                    <button type="button" onClick={handleFormSubmit}>Submit</button>
+                    <button style={styles.button} type="button" onClick={handleFormSubmit}>Submit</button>
                 </form>
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
+                </div>
             </div>
         </div>
+    </div>
     )
 }

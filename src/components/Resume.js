@@ -18,9 +18,9 @@ export default function Resume() {
         <div style={styles.pretty} id="my-resume">
             <h1>My Resume</h1>
             <div id="scroll">
-                <a href="./assets/images/karen-resume.pdf" target="_blank" download>
+                <a href={img1} download>
                     <img class="flex-image" src={img1} alt="My Resume" /></a>
-                <a href="./assets/images/karen-resume.pdf" target="_blank" download>
+                <a href={img2} download>
                     <img class="flex-image" src={img2} alt="My Resume Page 2" />
                 </a>
             </div>
