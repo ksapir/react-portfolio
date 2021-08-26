@@ -2,13 +2,6 @@ import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
 const styles = {
-    pretty: {
-        alignContent: 'center',
-        alighSelf: 'center',
-        padding: '20px',
-        margin: '20px auto',
-        border: '2px solid black'
-    },
     form: {
         margin: '20px',
     },
@@ -74,7 +67,7 @@ export default function ContactMe() {
         // <!-- Contact Me Section -->
     <div> 
         <div className="container">
-            <div style={styles.pretty} className="center" id="contact-me">
+            <div className="center pretty" id="contact-me">
                 <h1>Contact Me</h1>
                 <p>(561) 441-2962</p>
                 <a href="mailto: karenlpion@gmail.com">Email |</a>

@@ -1,0 +1,34 @@
+/* For different media screens */
+@media sreen and(max-wdith: 992px){
+    img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-shrink: 2;
+        
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        all: initial;
+        text-align: center;
+    }
+
+    nav {
+        all: initial;
+      display: flex;
+      flex-direction: row;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-family: 'Montserrat';
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-shrink: 2;
+    }
+}

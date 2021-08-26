@@ -8,13 +8,6 @@ import img6 from './images/workout-tracker.png'
 import img7 from './images/budget-tracker.png'
 
 const styles = {
-    pretty: {  
-        alignContent:'center',
-        alighSelf: 'center',
-        padding: '20px',
-        margin: '20px auto',
-        border: '2px solid black'
-    },
     margin: {
         marginBottom: '50px'
     }
@@ -23,7 +16,7 @@ const styles = {
 export default function MyWork() {
     return (
         <div>
-            <div style={styles.pretty} className="container center" id="my-work">
+            <div className="container center pretty">
                 <h1>My Work</h1>
                 {/* <!-- Perfect Home Section --> */}
                 <div className="row">
@@ -36,7 +29,7 @@ export default function MyWork() {
 
                 {/* <!-- Recipe Finder Section --> */}
                 <div style={styles.margin} className="row">
-                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                    <div style={styles.margin} className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 ">
                         <h2 className="reduce">Special Recipe Finder</h2>
                         <a href="https://ksapir.github.io/recipe-finder" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img2} alt="Recipe Finder"/></a>
@@ -44,7 +37,7 @@ export default function MyWork() {
                     </div>
 
                       {/* <!-- Note Taker Section --> */}
-                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                    <div style={styles.margin} className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <h2 className="reduce">Note Taker</h2>
                         <a href="https://note-taker-1992.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img5} alt="Work Day Scheduler"/></a>
@@ -53,7 +46,7 @@ export default function MyWork() {
                     </div>
 
                        {/* <!-- Workout Tracker Section --> */}
-                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                    <div style={styles.margin} className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <h2 className="reduce">Workout Tracker</h2>
                         <a href="https://floating-badlands-61761.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img6} alt="Work Day Scheduler"/></a>
@@ -64,7 +57,7 @@ export default function MyWork() {
                 <hr></hr>
                 <div className="row">
                        {/* <!-- Budget Tracker Section --> */}
-                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                    <div style={styles.margin} className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <h2 className="reduce">Budget Tracker</h2>
                         <a href="https://lit-taiga-45772.herokuapp.com/" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img7} alt="Work Day Scheduler"/></a>
@@ -73,7 +66,7 @@ export default function MyWork() {
                     </div>
 
                     {/* <!-- Weather Dashboard Section --> */}
-                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                    <div style={styles.margin} className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <h2 className="reduce">Weather Dashboard</h2>
                         <a href="https://ksapir.github.io/weather-dashboard" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img3} alt="Weather Dashboard"/></a>
@@ -82,7 +75,7 @@ export default function MyWork() {
                     </div>
 
                     {/* <!-- Work Day Scheduler Section --> */}
-                    <div className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 center project-gallery">
+                    <div style={styles.margin} className="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <h2 className="reduce">Work Day Scheduler</h2>
                         <a href="https://ksapir.github.io/work-day-scheduler" target="_blank" rel="noreferrer"><img className="pre-hover"
                         src={img4} alt="Work Day Scheduler"/></a>

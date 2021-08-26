@@ -3,7 +3,6 @@
     padding: auto;
 }
 
-
 body {
     background-image: linear-gradient(#649173, #DBD5A4);
     margin: 0;
@@ -15,15 +14,16 @@ body {
 header {
     display: flex;
     font-family: 'Montserrat';
-    padding: 15px;
-    height: 100%;
+    margin-top: 30px;
+    margin-left: 90px;
+    height: 150px
 }
 
 /* Rules for nav bar */
 nav {
     position: absolute;
-    right: 0px; 
-    margin-top: 35px;
+    right: 100px;
+    margin-right: 20px
 }
 
 /* Rules for h1 inside header section */
@@ -57,25 +57,12 @@ img {
     max-height: 100%;
 }
 
-/* Changes email link to white */
-a[href^="mailto"] { color: white; }
-
 a {
-    color: white;
+    color: white !important;
 }
 
 a:hover {
-    color: black;
-}
-
-.center {
-    align-content: center;
-    text-align: center;
-
-}
-
-.border {
-    border: 2px solid black !important;
+    color: black !important;
 }
 
 /* How images in 'My Work' section look when not hovered */
@@ -96,6 +83,15 @@ a:hover {
     line-height: 35px;
 }
 
+.pretty {
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid black
+}
+
 #scroll {
     max-height: 300px;
     max-width: 700px;
@@ -103,59 +99,9 @@ a:hover {
     border: 1px black solid;
 }
 
-#my-resume {
-    text-align: center;
-}
-
 #flex-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-
-
-a:visited {
-    color: white;
-}
-
-.project-gallery {
-    width: 25vw;
-    color: white;
-}
-
-/* For different media screens */
-@media sreen and(max-wdith: 992px){
-    img {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        flex-shrink: 2;
-        
-    } 
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-        margin: 10px;
-        font-size: 14px;
-    }
-
-    a {
-        color:black;
-    }
-
-    img {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        flex-shrink: 2;
-    }
-
-    .reduce {
-        font-size: 18px;
-    }
 }

@@ -6,6 +6,7 @@ import ContactMe from "./components/ContactMe";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import './styles/script.css'
+import './styles/mobile.css'
 
 import {
   BrowserRouter as Router,
@@ -15,31 +16,17 @@ import {
   useRouteMatch
 } from "react-router-dom";
 
-const styles = {
-  nav: {
-      marginRight: '20px'
-  },
-  a: {
-      marginRight: '5px',
-      marginLeft: '5px'
-  },
-  header: {
-    height: '200px'
-  },
-
-}
-
 function App() {
     return (
       <Router>
       <div>
-          <header style={styles.header}>
+          <header >
               <h1>Karen Pion</h1>
-              <nav style={styles.nav}>
-                  <OldSchoolMenuLink style={styles.a} activeOnlyWhenExact={true} to='/' label="About Me"></OldSchoolMenuLink>
-                  <OldSchoolMenuLink style={styles.a} to='/mywork' label="My Work"></OldSchoolMenuLink>
-                  <OldSchoolMenuLink style={styles.a} to='/contact'label="Contact Me"></OldSchoolMenuLink>
-                  <OldSchoolMenuLink style={styles.a} to='/resume'label="Resume"></OldSchoolMenuLink>
+              <nav >
+                  <OldSchoolMenuLink  activeOnlyWhenExact={true} to='/' label="About Me"></OldSchoolMenuLink>
+                  <OldSchoolMenuLink  to='/mywork' label="My Work"></OldSchoolMenuLink>
+                  <OldSchoolMenuLink  to='/contact'label="Contact Me"></OldSchoolMenuLink>
+                  <OldSchoolMenuLink  to='/resume'label="Resume"></OldSchoolMenuLink>
               </nav>
           </header>
       </div>
