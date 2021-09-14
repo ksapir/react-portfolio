@@ -4,7 +4,6 @@
 - Take a look at my professional portfolio to learn more about my experience, my projects and what I have to offer. This portfolio was built using react.
 
 ## Table of Contents:
-- [Installation](#installation)
 - [Visual Sample](#visual)
 - [Contributors](#contributors)
 - [Github](#github)
