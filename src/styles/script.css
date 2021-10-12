@@ -47,6 +47,12 @@ h2 {
     font-family: 'Montserrat';
 }
 
+h4{
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+
 /* Rules for footer */
 footer {
     text-align: center;

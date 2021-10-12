@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills'
 import img from './images/Karenpion.jpg'
 
 const styles = {
@@ -22,6 +23,7 @@ export default function AboutMe() {
             <p>{description}</p>
         </div>
         </div>
+        <Skills />
     </div>
     )
 }
