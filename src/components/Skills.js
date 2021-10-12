@@ -9,8 +9,8 @@ const styles = {
     },
     margin: {
         textAlign: 'left',
-        marginLeft: '200px',
-        marginRight: '150px',
+        marginLeft: '140px',
+        marginRight: '100px',
     }
 
 }
