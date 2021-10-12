@@ -2,9 +2,9 @@ import React from 'react';
 
 const styles ={
     space: {
-        margin: '80px 600px 0px',
+        margin: '80px 550px 0px',
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
     },
     center: {
         textAlign: 'center',
