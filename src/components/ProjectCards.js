@@ -3,8 +3,8 @@ import img1 from './images/There-and-back-again.png'
 import img2 from './images/perfect-home.png'
 import img3 from './images/recipe-finder.png'
 import img4 from './images/weather-dashboard.png'
-import img5 from './images/work-day-scheduler.png'
-import img6 from './images/note-taker.png'
+import img5 from './images/workout-tracker.png'
+import img6 from './images/budget-tracker.png'
 import img7 from './images/workout-tracker.png'
 import img8 from './images/budget-tracker.png'
 
@@ -41,6 +41,22 @@ const projects= [
         repo: "https://github.com/ksapir/weather-dashboard",
         img: img4
     },
+    {
+        name: "Workout Tracker",
+        description: "Like a lot of difficult things, when it comes to exercising, being held accountable can have great influence on the results. This workout tracker will help with just that. Enter what kind of workout you're doing as well as all the details and you'll be able to track your statistics.",
+        tech: "Javascript, MongDB, Express.js",
+        link: "https://floating-badlands-61761.herokuapp.com/",
+        repo: "https://github.com/ksapir/workout-tracker",
+        img: img5
+    },
+    {
+        name: "Budget Tracker",
+        description: "Sometimes in life we just don't have any internet access. With the Budget-Tracker, you'll be able to track your debits and credits even offline. Once you get back online, those transactions will be uploaded and reflected.",
+        tech: "PWA, Javascript, HTML, CSS",
+        link: "https://lit-taiga-45772.herokuapp.com/",
+        repo: "https://github.com/ksapir/budget-trackers",
+        img: img6
+    },
     ]
 
 export default function ProjectCards() {
@@ -51,7 +67,7 @@ export default function ProjectCards() {
                 <a href={project.link} target="_blank" rel="noreferrer"><img className="pre-hover flex-image" src={project.img} alt="Project Image"/></a>
                 <h2 className="card-title">{project.name}</h2>
                 <p className="card-description">{project.description}</p>
-                <p>Technology Used: <b>{project.tech}</b></p>
+                <p>Technologies Used: <b>{project.tech}</b></p>
                 <a target="blank" href={project.repo}><button className="card-btn">View Repository</button></a>
         </div>
             ))}

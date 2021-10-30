@@ -7,7 +7,13 @@
         margin: 0 auto;
         flex-shrink: 2;
         
-    } 
+    };
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(4rem, 16rem));
+        gap: 2rem;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -30,5 +36,12 @@
         justify-content: center;
         margin: 0 auto;
         flex-shrink: 2;
+    };
+
+    .wrapper {
+        display: grid;
+ 
+        gap: 2rem;
+        justify-content: center;
     }
 }

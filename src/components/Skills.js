@@ -6,20 +6,14 @@ const styles = {
     },
     body: {
         fontSize: '24px',
-    },
-    margin: {
-        textAlign: 'left',
-        marginLeft: '140px',
-        marginRight: '100px',
     }
-
 }
 
 export default function Skills() {
     return (
         <div className="pretty">
             <h2>Techincal Skills:</h2>
-            <ul style={styles.margin}>
+            <ul>
                 <p style={styles.body}><b style={styles.title}>Programming Languages:</b> HTML, CSS, Javascript</p>
                 <p style={styles.body}><b style={styles.title}>Database Management:</b> MySQL, Sequelize, MongoDB, Mongoose</p>
                 <p style={styles.body}><b style={styles.title}>Libraries/Frameworks:</b> Jquery, React.js, Express.js, Moment.js, Bootstrap, Foundation</p>
