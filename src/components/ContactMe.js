@@ -1,5 +1,13 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import emailjs from 'emailjs-com'
+import React, {useState} from "react"
+// import { validateEmail } from '../utils/helpers';
+
+const Result =() => {
+    return (
+        <p>Your message has been succssfully sent. Thank you!</p>
+    )
+
+}
 
 const styles = {
     form: {
@@ -30,37 +38,19 @@ const styles = {
 }
 
 export default function ContactMe() {
-    // Create state variables for the fields in the form
-    // We are also setting their initial values to an empty string
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('');
-    const [message, setMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
+    const [result, showResult] = useState(false)
 
-    const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_rrn8mlm', 'template_kg3j5eq', e.target, 'user_1Cqs0UiYIW4SjPWv89iuD')
+        .then(res => {
+            console.log(res);
+        }).catch(err => {console.log(err)});
+        e.target.reset();
+        showResult(true)
 
-        if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'name') {
-            setName(inputValue);
-        } else if (inputType === 'message') {
-            setMessage(inputValue);
-        }
-    };
-
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-
-        if (!validateEmail(email)) {
-            setErrorMessage('Please enter a valid email');
-            return;
-        }
-        setName('');
-        setMessage('');
-        setEmail('');
+    
     };
 
     return (
@@ -74,35 +64,27 @@ export default function ContactMe() {
                 <a href="https://github.com/ksapir" target="_blank" rel="noreferrer"> Github |</a>
                 <a href="https://www.linkedin.com/in/karenpion/" target="_blank" rel="noreferrer">  LinkedIn</a>
             <div>
-                <form style={styles.form}>
+                <form style={styles.form} onSubmit={sendEmail}>
+                 
                     <input style={styles.input}
-                        value={email}
                         name="email"
-                        onChange={handleInputChange}
                         type="email"
-                        placeholder="Email"
-                    />
+                        placeholder="Email"/>
+                  
                     <input style={styles.input}
-                        value={name}
                         name="name"
-                        onChange={handleInputChange}
                         type="text"
-                        placeholder="Name"
-                    />
+                        placeholder="Name"/>
+   
                     <textarea style={styles.textarea}
-                        value={message}
                         name="message"
-                        onChange={handleInputChange}
                         type="text"
-                        placeholder="Message"
-                    />
-                    <button style={styles.button} type="button" onClick={handleFormSubmit}>Submit</button>
-                </form>
-                {errorMessage && (
+                        placeholder="Message"/>
+                    <input style={styles.button} type="submit" value="Send Message"/>
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        {result ? <Result /> : null }
                     </div>
-                )}
+                </form>
                 </div>
             </div>
         </div>

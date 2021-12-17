@@ -1,5 +1,5 @@
 /* For different media screens */
-@media sreen and(max-wdith: 992px){
+@media screen and(max-wdith: 992px){
     img {
         display: flex;
         justify-content: center;
