@@ -34,11 +34,26 @@ const styles = {
         width: '100%',
         borderRadius: '5px'
     }
-      
 }
 
 export default function ContactMe() {
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
     const [result, showResult] = useState(false)
+
+    const handleInputChange = (e) => {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+        if (inputType === 'email') {
+            setEmail(inputValue);
+        } else if (inputType === 'name') {
+            setName(inputValue);
+        } else if (inputType === 'message') {
+            setMessage(inputValue);
+        }
+    };
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -47,7 +62,9 @@ export default function ContactMe() {
         .then(res => {
             console.log(res);
         }).catch(err => {console.log(err)});
-        e.target.reset();
+        setName('');
+        setMessage('');
+        setEmail('');
         showResult(true)
 
     
@@ -67,19 +84,28 @@ export default function ContactMe() {
                 <form style={styles.form} onSubmit={sendEmail}>
                  
                     <input style={styles.input}
+                        value={email}
                         name="email"
                         type="email"
-                        placeholder="Email"/>
-                  
+                        placeholder="Email"
+                        onChange={handleInputChange}
+                        />
+                    
                     <input style={styles.input}
+                        value={name}
                         name="name"
                         type="text"
-                        placeholder="Name"/>
+                        placeholder="Name"
+                        onChange={handleInputChange}
+                        />
    
                     <textarea style={styles.textarea}
+                        value={message}
                         name="message"
                         type="text"
-                        placeholder="Message"/>
+                        placeholder="Message"
+                        onChange={handleInputChange}
+                        />
                     <input style={styles.button} type="submit" value="Send Message"/>
                     <div>
                         {result ? <Result /> : null }

@@ -62,7 +62,7 @@ export default function ProjectCards() {
         <div className="wrapper">
             {projects.map((project)=> (
         <div className="card">
-                <a href={project.link} target="_blank" rel="noreferrer"><img className="pre-hover flex-image" src={project.img} alt="Project"/></a>
+                <a href={project.link} target="_blank" rel="noreferrer"><img className="pre-hover flex-image" src={project.img} alt="Projects"/></a>
                 <h2 className="card-title">{project.name}</h2>
                 <p className="card-description">{project.description}</p>
                 <p>Technologies Used: <b>{project.tech}</b></p>

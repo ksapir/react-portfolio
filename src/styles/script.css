@@ -1,159 +1,165 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(#649173, #DBD5A4);
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: linear-gradient(#649173, #dbd5a4);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Rules for Header*/
 header {
-    display: flex;
-    font-family: 'Montserrat';
-    margin-top: 30px;
-    margin-left: 90px;
-    height: 150px
+  display: flex;
+  font-family: "Montserrat";
+  margin-top: 30px;
+  margin-left: 90px;
+  height: 150px;
 }
 
 /* Rules for nav bar */
-nav {
-    position: absolute;
-    right: 100px;
-    margin-right: 20px
+.nav {
+  color: black !important;
+  position: absolute;
+  display: block !important;
+  right: 100px;
+  margin-right: 20px;
+}
+
+ul {
+  color: black !important;
 }
 
 /* Rules for h1 inside header section */
 header h1 {
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
 }
 
 /* All other h1 rules */
 h1 {
-    font-size: 40px;
-    margin: 10px;
-    font-family: 'Montserrat';
-    font-weight: bold;
+  font-size: 40px;
+  margin: 10px;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
 /* h2 rules */
 h2 {
-    font-size: 25px;
-    font-family: 'Montserrat';
+  font-size: 25px;
+  font-family: "Montserrat";
 }
 
-h4{
-    font-size: 18px;
-    font-family: 'Montserrat';
+h4 {
+  font-size: 18px;
+  font-family: "Montserrat";
 }
 
 /* Rules for footer */
 footer {
-    text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-a {
-    color: white !important;
+footer a {
+  color: white !important;
+  padding: 25px;
 }
 
-a:hover {
-    color: black !important;
+footer a:hover {
+  color: black !important;
 }
 
 /* How images in 'My Work' section look when not hovered */
 .pre-hover {
-    opacity: 1.0;
+  opacity: 1;
 }
 
 /* How images in 'My Work' section look upon hover */
 .pre-hover:hover {
-    opacity: 0.5;
+  opacity: 1;
 }
 
 #about-me {
-    text-align: left;   
+  text-align: left;
 }
 
 #about-me p {
-    line-height: 35px;
+  line-height: 35px;
 }
 
 .pretty {
-    text-align: center;
-    align-content: center;
-    align-self: center;
-    padding: 20px;
-    margin: 20px auto;
-    border: 2px solid black
+  text-align: center;
+  align-content: center;
+  align-self: center;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid black;
 }
 
 #scroll {
-    max-height: 300px;
-    max-width: 700px;
-    overflow: scroll;
-    border: 1px black solid;
+  max-height: 300px;
+  max-width: 700px;
+  overflow: scroll;
+  border: 1px black solid !important;
 }
 
 #flex-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 24rem));
-    gap: 2rem;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 24rem));
+  gap: 2rem;
+  justify-content: center;
 }
 
 .card {
-    background-color:transparent !important;
-    height: 600px;
-    margin-top: 0rem !important;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    overflow: scroll;
-    box-shadow: 0 2px 20px black;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: transform 200ms ease-in;
+  background-color: transparent !important;
+  height: 600px;
+  margin-top: 0rem !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  box-shadow: 0 2px 20px black;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
 }
 
-.card img{
-    margin-top: 0;
-    width: 100%;
-    object-fit:cover;
+.card img {
+  margin-top: 0;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 .card-btn {
-    margin: 1rem;
-    padding: 1rem;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 1rem;
-    border: 2px solid black;
-    background: transparent;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid black;
+  background: transparent;
 }
 
-.card:hover{
-    transform: scale(1.02)
+.card:hover {
+  transform: scale(1.02);
 }
-.card-btn:hover{
-    background-color: #649173;
-    border: 2px solid #649173;
-    color: white;
+.card-btn:hover {
+  background-color: #649173;
+  border: 2px solid #649173;
+  color: white;
 }
-
-

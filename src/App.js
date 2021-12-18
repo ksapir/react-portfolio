@@ -5,15 +5,14 @@ import MyWork from "./components/MyWork";
 import ContactMe from "./components/ContactMe";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
-import './styles/script.css'
-import './styles/mobile.css'
+import './styles/script.css';
+import './styles/mobile.css';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch
+  NavLink
 } from "react-router-dom";
 
 function App() {
@@ -23,12 +22,12 @@ function App() {
       <div>
           <header >
               <h1>Karen Pion</h1>
-              <nav >
-                  <OldSchoolMenuLink  activeOnlyWhenExact={true} to='/' label="About Me"></OldSchoolMenuLink>
-                  <OldSchoolMenuLink  to='/mywork' label="My Work"></OldSchoolMenuLink>
-                  <OldSchoolMenuLink  to='/contact'label="Contact Me"></OldSchoolMenuLink>
-                  <OldSchoolMenuLink  to='/resume'label="Resume"></OldSchoolMenuLink>
-              </nav>
+              <ul className="nav">
+                  <li><NavLink to='/' exact={true} activeStyle={{color: "white"}}>About Me</NavLink></li>
+                  <li><NavLink  to='/mywork' activeStyle={{color: "white"}}>My Work</NavLink></li>
+                  <li><NavLink  to='/contact' activeStyle={{color: "white"}}>Contact me</NavLink></li>
+                  <li><NavLink  to='/resume' activeStyle={{color: "white"}}>Resume</NavLink></li>
+              </ul>
           </header>
       </div>
         <div className="App">
@@ -42,20 +41,7 @@ function App() {
         </div>
       </Router>
       );
-}
 
-function OldSchoolMenuLink({ label, to, activeOnlyWhenExact }) {
-  let match = useRouteMatch({
-    path: to,
-    exact: activeOnlyWhenExact
-  });
-
-  return (
-    <div className={match ? "active" : ""}>
-      {match && "> "}
-      <Link to={to}>{label}</Link>
-    </div>
-  );
 }
 
 export default App
