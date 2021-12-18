@@ -5,7 +5,7 @@ import img from './images/Karenpion.jpg'
 const styles = {
     img: {
         float: 'left',
-        margin: '0px 15px 15px 0px',
+        marginRight: '15px',
     }
 }
 
