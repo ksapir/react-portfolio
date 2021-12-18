@@ -10,7 +10,7 @@ const styles = {
 }
 
 export default function AboutMe() {
-    const description = `Hello! Welcome to my portfolio and thank you for visiting. My name is Karen Pion and I am a software developer. Making web applications is my thing. From front end to back end, I've got you covered as a full stack developer. I graduated from the University of Washington's Full Stack Coding Bootcamp and I am on my forever coding journey. Although I love the whole process of building tech, what I find the most passion for is styling tech and just making things look nice, cohesive and have the user experience be elevated just by visiting. Contact me for anything coding and developing.`;
+    const description = "My name is Karen and I am a web developer. Graduating from the University of Washington's Full Stack Coding Bootcamp enabled me to become the developer I am today. I love all aspects of web developing from contributing to User Experience to writing routes to correctly call on API's. I'm a proponent for mentorships, project collaboration and working with both the developers and technologies of the future. I believe that anyone can be taught the skills to becoming a developer, but it is the personal attributes of an individual that is the most valuable and will ultimately determine how successful one is in their goals. If you feel the same or would like to connect feel free to contact me.";
 
     return (
         <div className="container">
