@@ -15,6 +15,12 @@ import {
   NavLink
 } from "react-router-dom";
 
+const styles = {
+  black: {
+    color: 'black',
+}
+}
+
 function App() {
  
     return (
@@ -23,10 +29,10 @@ function App() {
           <header >
               <h1>Karen Pion</h1>
               <ul className="nav">
-                  <li><NavLink to='/' exact={true} activeStyle={{color: "white"}}>About Me</NavLink></li>
-                  <li><NavLink  to='/mywork' activeStyle={{color: "white"}}>My Work</NavLink></li>
-                  <li><NavLink  to='/contact' activeStyle={{color: "white"}}>Contact me</NavLink></li>
-                  <li><NavLink  to='/resume' activeStyle={{color: "white"}}>Resume</NavLink></li>
+                  <li><NavLink style={styles.black} to='/' exact={true} activeStyle={{color: "white"}}>About Me</NavLink></li>
+                  <li><NavLink  style={styles.black} to='/mywork' activeStyle={{color: "white"}}>My Work</NavLink></li>
+                  <li><NavLink style={styles.black} to='/contact' activeStyle={{color: "white"}}>Contact me</NavLink></li>
+                  <li><NavLink style={styles.black} to='/resume' activeStyle={{color: "white"}}>Resume</NavLink></li>
               </ul>
           </header>
       </div>

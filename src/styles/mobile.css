@@ -26,9 +26,9 @@
 
     .nav {
         all: initial;
-        display: flex;
+        display: flex !important;
         justify-content: space-evenly;
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
         font-size: 14px;
         font-family: 'Montserrat';
     }
