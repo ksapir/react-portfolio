@@ -142,7 +142,6 @@ footer a:hover {
   margin-top: 0;
   width: 100%;
   object-fit: cover;
-  opacity: 0.5;
 }
 
 .card-btn {
@@ -162,4 +161,31 @@ footer a:hover {
   background-color: #649173;
   border: 2px solid #649173;
   color: white;
+}
+
+.wrap {
+  position: relative;
+  margin-top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  margin: 0px;
+  padding: 60px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+  color: white;
+  font-size: 30px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.wrap:hover .text {
+  visibility: visible;
+  opacity: 1;
 }
