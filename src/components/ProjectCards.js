@@ -5,8 +5,17 @@ import img3 from './images/recipe-finder.png'
 import img4 from './images/weather-dashboard.png'
 import img5 from './images/workout-tracker.png'
 import img6 from './images/budget-tracker.png'
+import img7 from './images/SapphireDiving.png'
 
 const projects= [
+    {
+        name: "Sapphire Diving Website",
+        description: "Website for an underwater yacht maintenance company called Sapphire Diving.",
+        tech: "Javascript, HTML, CSS, EmailJS,",
+        link: "https://sapphirediving.com/",
+        repo: "https://sapphirediving.com/",
+        img: img7
+    },
     {
         name: "There and Back Again",
         description: "A fun and interactive application that encourages users to exercise. Users can walk to Mordor by logging their miles and the application will determine and display which parts on their journey they have reached.",
